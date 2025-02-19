@@ -6,7 +6,7 @@
             "app_description": "Automatically detects and formats code snippets in messages with proper syntax highlighting and language detection.",
             "app_logo": "https://www.svgrepo.com/show/311947/code-editor.svg",
             "app_name": "Code Block Formatter",
-            "app_url": "https://6kmrq4n5-8000.uks1.devtunnels.ms",
+            "app_url": "https://telex-code-block-formatter.onrender.com",
             "background_color": "#ffffff"
         },
         "integration_category": "Development & Code Management",
@@ -41,8 +41,7 @@
                 "required": true
             }
         ],
-        "target_url": "https://ping.telex.im/v1/webhooks/0195156c-40a0-7f19-81d9-2066a5cea022",
-        "website": "https://telex.im"
+        "target_url": "https://ping.telex.im/v1/webhooks/0195156c-40a0-7f19-81d9-2066a5cea022"
     }
 }
 
