@@ -35,7 +35,7 @@
             },
             {
                 "label": "detectLanguage",
-                "type": "boolean",
+                "type": "checkbox",
                 "description": "Automatically detect programming language",
                 "default": true,
                 "required": true
