@@ -1,0 +1,49 @@
+{
+    "data": {
+        "author": "Kara Dumk",
+        "date": {"created_at": "2025-02-18", "updated_at": "2025-02-18"},
+        "descriptions": {
+            "app_description": "Automatically detects and formats code snippets in messages with proper syntax highlighting and language detection.",
+            "app_logo": "https://www.svgrepo.com/show/311947/code-editor.svg",
+            "app_name": "Code Block Formatter",
+            "app_url": "https://6kmrq4n5-8000.uks1.devtunnels.ms",
+            "background_color": "#ffffff"
+        },
+        "integration_category": "Development & Code Management",
+        "integration_type": "modifier",
+        "is_active": true,
+        "key_features": [
+            "Automatic code detection in messages",
+            "Programming language detection",
+            "Markdown code block formatting",
+            "Multi-language support",
+            "Preserves existing formatted blocks"
+        ],
+        "permissions": {
+            "modifier_user": {
+                "always_active": true,
+                "display_name": "Code Formatter"
+            }
+        },
+        "settings": [
+            {
+                "label": "minLines",
+                "type": "number",
+                "description": "Minimum number of lines to trigger code detection",
+                "default": 1,
+                "required": true
+            },
+            {
+                "label": "detectLanguage",
+                "type": "boolean",
+                "description": "Automatically detect programming language",
+                "default": true,
+                "required": true
+            }
+        ],
+        "target_url": "https://ping.telex.im/v1/webhooks/0195156c-40a0-7f19-81d9-2066a5cea022",
+        "website": "https://telex.im"
+    }
+}
+
+
