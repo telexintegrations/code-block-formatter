@@ -53,6 +53,8 @@ Copy
 `uvicorn main:app --reload`
 
 ### sample test
+bash
+
 `curl -X POST "http://localhost:8000/format-message"
 
  -H "Content-Type: application/json"
@@ -74,10 +76,13 @@ Copy
  }'`
 
 ### sample response
+json
+`{
 "event_name": "message_formatted",
   "message": "```python\ndef hello_world():\n    print(\"Hello World!\")\n```",
   "status": "success",
-  "username": "code-formatter-bot"
+  "username": "code-formatter-bot" 
+}`
 
 
 API Endpoints
@@ -128,7 +133,9 @@ bash
        ]
      }'`
 
-  
+## setup in telex
+![Setup Screenshot](screenshots/setup.png)
+
 Contributing
 ------------
 
