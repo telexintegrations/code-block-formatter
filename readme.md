@@ -43,3 +43,40 @@ bash
 Copy
 
 `uvicorn main:app --reload`
+
+### sample test
+curl -X POST "http://localhost:8000/format-message"
+
+ -H "Content-Type: application/json"
+
+ -d '{
+
+ "channel_id": "0192dd70-cdf1-7e15-8776-4fee4a78405e",
+
+ "settings": [
+
+ {"label": "minLines", "type": "number", "default": 2, "required": true},
+
+ {"label": "detectLanguage", "type": "boolean", "default": true, "required": true}
+
+ ],
+
+ "message": "def hello_world():\n print(\"Hello World!\")"
+
+ }' 
+
+response
+"event_name": "message_formatted",
+  "message": "```python\ndef hello_world():\n    print(\"Hello World!\")\n```",
+  "status": "success",
+  "username": "code-formatter-bot"
+
+Contributing
+------------
+
+Pull requests are welcome! For major changes, open an issue first to discuss proposed updates.
+
+License
+-------
+
+MIT License
