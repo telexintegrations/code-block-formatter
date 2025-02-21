@@ -150,12 +150,16 @@ async def telex_webhook(request: Request):
     payload = await request.json()
     print("Received webhook:", json.dumps(payload, indent=2))
 
+    # Validate required fields
+    if "event_name" not in payload or "message" not in payload:
+        raise HTTPException(status_code=422, detail="Missing required fields: 'event_name' or 'message'")
+    
     event_name = payload.get("event_name")
     raw_message = payload.get("message", "")
 
     # Clean up the message from HTML tags
     soup = BeautifulSoup(raw_message, "html.parser")
-    cleaned_message = soup.get_text("\n")  # Converts HTML to readable text
+    cleaned_message = soup.get_text("\n")
 
     # Detect language if required
     language = "plaintext"
