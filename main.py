@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from typing import Dict, Any, List, Optional
+from fastapi.middleware.cors import CORSMiddleware
 import re
 import httpx
 import logging
@@ -11,6 +12,14 @@ from bs4 import BeautifulSoup
 app = FastAPI(title="Code Block Formatter")
 
 logger = logging.getLogger(__name__)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 class Setting(BaseModel):
