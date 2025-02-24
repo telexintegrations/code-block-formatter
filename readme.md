@@ -8,7 +8,7 @@ An automatic code block formatter integration for Telex that detects and properl
 - **Customizable Settings**: Allows configuration for minimum line detection.
 
 ## Public Deployment
-This integration is deployed using render [code-block-formatter](https://telex-code-block-formatter.onrender.com)
+This integration is deployed using render [code-block-formatter](https://code-block-formatter.onrender.com)
 
 ## Local Development
 
