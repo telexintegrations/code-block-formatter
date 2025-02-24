@@ -36,6 +36,12 @@ class FormatRequest(BaseModel):
     message: str
 
 
+class WebhookRequest(BaseModel):
+    event_name: str
+    message: str
+    settings: List[Setting]
+
+
 def get_setting_value(settings: List[Setting], label: str, default: Any) -> Any:
     """Extract setting value from settings list"""
     for setting in settings:
