@@ -124,8 +124,9 @@ bash
        ]
      }'`
 
-## setup in telex
-![Setup Screenshot](screenshots/setup.png)
+## sample message in telex
+![Setup Screenshot](./screenshots/setup.png)
+![Sample message](./screenshots/codeblock-formatter.png)
 
 Contributing
 ------------
