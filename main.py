@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://telex.im"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
